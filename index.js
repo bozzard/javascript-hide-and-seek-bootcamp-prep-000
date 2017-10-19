@@ -54,7 +54,9 @@ function increaseRankBy(n) {
 console.log('rankedLists = ', rankedLists);
   for (let i = 0, l = rankedLists.length; i < l; i++) {
     let children = rankedLists[i].children
-console.log(`children of rankedLists[i] ${rankedLists[i]}, i ${i}`)
+console.log('children of rankedLists[i]', children)
+console.log( 'i= ', i);
+
     for (let j = 0, k = children.length; j < k; j++) {
       children[j].innerHTML = parseInt(children[j].innerHTML) + n
       console.log(`inner ${children[j].innerHTML}; children of children[j] ${children[j]}, j ${j}`);
