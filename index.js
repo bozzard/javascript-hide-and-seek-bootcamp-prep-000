@@ -51,12 +51,25 @@ function deepestChild() {
 
 function increaseRankBy(n) {
   const rankedLists = document.querySelectorAll('.ranked-list')
-
+console.log('rankedLists = ', rankedLists);
   for (let i = 0, l = rankedLists.length; i < l; i++) {
     let children = rankedLists[i].children
-
+console.log(`children of rankedLists[i] ${rankedLists[i]}, i ${i}`)
     for (let j = 0, k = children.length; j < k; j++) {
       children[j].innerHTML = parseInt(children[j].innerHTML) + n
+      console.log(`inner ${children[j].innerHTML}; children of children[j] ${children[j]}, j ${j}`);
     }
   }
+}
+
+
+function increaseRankBy(n) {
+  var lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
+
+for (let i = 0; i < lis.length; i++) {
+  var inner =  parseInt(lis[i].innerHTML) + n;
+
+  lis[i].innerHTML = inner.toString()
+}
+return lis;
 }
