@@ -37,7 +37,7 @@ function deepestChild() {
   let node = document.getElementById('grand-node')
   console.log('node =' , node);
   let nextNode = node.children[0]
-  console.log('nextNode =' , node);
+  console.log('nextNode =' , nextNode);
   while (nextNode) {
     node = nextNode
     console.log('node = nextNode ', node);
