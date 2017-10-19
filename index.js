@@ -59,7 +59,9 @@ console.log( 'i= ', i);
 
     for (let j = 0, k = children.length; j < k; j++) {
       children[j].innerHTML = parseInt(children[j].innerHTML) + n
-      console.log(`inner ${children[j].innerHTML}; children of children[j] ${children[j]}, j ${j}`);
+      console.log('inner', children[j].innerHTML)
+        console.log( 'children of children[j]', children[j]);
+        console.log( 'j',  j );
     }
   }
 }
