@@ -42,6 +42,8 @@ function deepestChild() {
     node = nextNode
     console.log('node = nextNode ', node);
     nextNode = node.children[0]
+    console.log('nextNode = node.children[0] ', nextNode);
+
   }
 
   return node
