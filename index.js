@@ -69,7 +69,7 @@ console.log( 'i= ', i);
 
 function increaseRankBy(n) {
   var lis = document.getElementById('app').querySelectorAll('ul.ranked-list li')
-
+console.log ('lis =', lis);
 for (let i = 0; i < lis.length; i++) {
   var inner =  parseInt(lis[i].innerHTML) + n;
 
